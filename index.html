@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E
+<html xmlns="http://www.w3.org/1999/xhtml%22%3E</html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+    <title>AWS Community Day - Email Template</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-size: 62.5%;
+    }
+
+    body{
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #232F3E;
+    }
+
+    .wrapper{
+      background-color: #F2F5F8;
+      width: 100%;
+      padding: 6rem;
+      table-layout: fixed;
+    }
+
+    .main-container{
+      width: 60rem;
+    }
+
+    .header{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.3rem;
+    }
+
+    .header-logo{
+      height: 11.5rem;
+      width: 29.7rem;
+    }
+
+    /* MAIN CONTAINER */
+    .main{
+      background-color: white;
+      border-radius: 1rem;
+      padding: 4.3rem 3.2rem;
+      text-align: justify;
+      margin-bottom: 3rem;
+    }
+
+    hr.solid-1{
+      background-color: #C2C2C2;
+      height: 0.2rem;
+      border: none;
+      margin-top: 3.5rem;
+      margin-bottom: 3.6rem;
+    }
+
+    .container{
+      display: relative;
+      padding: 5.9rem 8.5rem;
+    }
+    .box{
+      background-color: #FFEED8;
+      border-radius: 11px;
+      text-align: center;
+      padding: 5.3rem 2.7rem;
+    }
+
+    .box h1{
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #37475A;
+      margin-top: 1.6rem;
+      margin-bottom: 4rem;
+    }
+
+
+    .dl-link:link, .dl-link:visited{
+      display: inline-block;
+      color: #2230F6;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s;
+      margin-bottom: 3.3rem;
+    }
+
+    .dl-link:hover, .dl-link:active{
+      color: #141d94;
+    }
+
+    .btn:link, .btn:visited{
+      display: inline-block;
+      background-color: #FEBD69;
+      text-decoration: none;
+      color: #37475A;
+      font-weight: 500;
+      border-radius: 2rem;
+      padding: 0.8rem 1.6rem;
+      border: 0.2rem solid #C19050;
+      transition: all 0.3s;
+    }
+
+    .btn:hover, .btn:active{
+      background-color: #FF9900;
+    }
+
+    .mascot{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,27%);
+    }
+
+    hr.solid-2{
+      margin-top: 0;
+    }
+
+    /* FEEDBACK FORM */
+    .feedback{
+      margin: 3rem 5rem 0 5rem;
+    }
+
+    .descrip{
+      color: #666666;
+      font-size: 14px;
+      text-align: justify;
+      margin-bottom: 2.4rem;
+    }
+
+    .btn-feedback:link, 
+    .btn-feedback:visited{
+      display: inline-block;
+      background-color: #6A7C94;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      padding: 0.9rem 1.6rem;
+      border-radius: 14px;
+      margin-bottom: 4.7rem;
+      transition: all 0.3s;
+    }
+
+    .btn-feedback:hover,
+    .btn-active:active{
+      background-color: #37475A;
+    }
+
+    .note{
+      color: #999999;
+      font-size: 12px;
+    }
+
+    .footer{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .footer-logo{
+      grid-area: 1/1/2/3;
+      margin-bottom: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .tagline{
+      font-size: 12px;
+      color: #999999;
+      margin-right: 7rem;
+    }
+
+    .socmed-icon{
+      display: flex;
+      gap: 2.4rem;
+      justify-content: flex-end;
+    }
+
+
+  </style>
+</head>
+<body>
+<center class="wrapper">
+  <div class="main-container">
+    <table class="header">
+      <tr>
+        <img src="assets\Logos\AWSTopLogo.svg" alt="AWS Logo" class="header-logo"/>
+      </tr>
+    </table>
+    <table class="main">
+      <tr>
+        <td>
+          <p>
+            Dear Name,<br><br/>Thank you for joining us at AWS Community Day 2023 and for using the AWS Photobooth app. Your participation and consideration were greatly appreciated.
+          </p>
+          <hr class="solid-1">
+        </td>
+      </tr>
+      <!-- Picture -->
+      <tr>
+        <td>
+          <div class="container">
+            <div class="box">
+              <img src="/assets/Logos/AWSMascot.svg" alt="Mascot Logo" class="mascot"/>
+              <h1>Hi Name,<br/>your Photobooth<br/>pictures are now ready!</h1>
+              <p>You can access your pictures captured in the photobooth by going to
+                <a href="#" class="dl-link">https://awsphotobooth.com</a>
+               </p>
+               <a href="#" class="btn">Download Photo</a>
+            </div>
+          </div>
+          <hr class="solid-2">
+        </td>
+      </tr>
+    <!-- Feedback Form -->
+      <tr>
+        <td>
+          <div class="feedback">
+            <p class="descrip">We value your feedback! Help us improve by sharing your thoughts and suggestions through our feedback form:</p>
+            <a href="#" class="btn-feedback">Share Feedback</a>
+            <p class="note"> This is a system generated message. Do not reply.</p>
+          </div>
+          </td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+          <td>
+            <div class="footer">
+              <img src="assets/Logos/BottomLogo.svg" alt="Community Day Logo" class="footer-logo"/>
+              <p class="tagline">Join us as we share success stories, use cases from industry leaders, and many more AWSomeness.</p>
+              <div class="socmed-icon">
+                <a href="#">
+                  <img src="assets/Logos/Twitter.svg" alt="Twitter"/>
+                </a>
+                <a href="#">
+                <img src="assets/Logos/Facebook.svg" alt="Facebook"/>
+                </a>
+                <a href="#">
+                  <img src="assets/Logos/LinkedIn.svg" alt="Linkedin"/>
+                </a>
+              </div>
+            </div>
+          </td>
+      </tr>
+  </table>
+  </div>  
+</center>
+</body>
+</html>
