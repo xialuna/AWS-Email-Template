@@ -40,18 +40,13 @@
     }
 
     header {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      width: 100%;
+    } 
+
+    td {
+      padding-bottom: 4.5rem;
     }
     
-    .header-logo {
-        height: 11.5rem;
-        width: 29.7rem;
-    }
-
     .main{
       background-color: white;
       /* border-radius: 1rem; */
@@ -166,6 +161,8 @@
     }
 
     .footer{
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
@@ -193,12 +190,13 @@
 
 <body>
     <div class="wrapper">
-        <div class="main-container">
-            <header>
-                <div class="logo" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="https://i.postimg.cc/y8cdhW1Y/AWSLogo-Top.png" alt="AWS Logo" class="header-logo"/>
-                </div>
-            </header>
+            <table class="header" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" border-collapse="collapse">
+              <tr class="logo-row">
+                  <td align="center">
+                      <img src="https://i.postimg.cc/y8cdhW1Y/AWSLogo-Top.png" alt="AWS Logo" class="header-logo"/>
+                  </td>
+              </tr>
+          </table>
     
             <div class="main">
                 <p>
@@ -213,7 +211,9 @@
                         <p>You can access your pictures captured in the photobooth by going to
                           <a href="#" class="dl-link">https://awsphotobooth.com</a>
                          </p>
-                         <a href="#" class="btn">Download Photo</a>
+                         <div class="button-holder">
+                           <a href="#" class="btn">Download Photo</a>
+                         </div>
                       </div>
                 </div>
                 <hr class="solid-2">
@@ -230,17 +230,16 @@
                 <p class="tagline">Join us as we share success stories, use cases from industry leaders, and many more AWSomeness.</p>
                 <div class="socmed-icon">
                     <a href="#">
-                    <img src="assets/Logos/Twitter.svg" alt="Twitter"/>
+                    <img src="https://i.postimg.cc/wvd0DDjK/Twitter.png" alt="Twitter"/>
                     </a>
                     <a href="#">
-                    <img src="assets/Logos/Facebook.svg" alt="Facebook"/>
+                    <img src="https://i.postimg.cc/cJ3FKFZM/Facebook.png" alt="Facebook"/>
                     </a>
                     <a href="#">
-                    <img src="assets/Logos/LinkedIn.svg" alt="Linkedin"/>
+                    <img src="https://i.postimg.cc/rmCgjzDD/LinkedIn.png" alt="Linkedin"/>
                     </a>
                 </div>
             </div>
-        </div>
     </div>
 </body>
 </html>
